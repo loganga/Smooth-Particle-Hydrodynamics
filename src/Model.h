@@ -67,6 +67,10 @@ public:
 			GLfloat zVel = velocity[i * 3 + 2];
 			calcDensity();
 			calcAcceleration(deltaT);
+			glm::vec4 temp = glm::vec4(acceleration[i * 3], acceleration[i * 3 + 1], acceleration[i * 3 + 2], 0) * rot;
+			acceleration[i * 3] = temp[0];
+			acceleration[i * 3 + 1] = temp[1];
+			acceleration[i * 3 + 2] = temp[2];
 			calculateNewPositions(deltaT, i, x, y, z, xVel, yVel, zVel);
 			positions[i * 3] = x;
 			positions[i * 3 + 1] = y;

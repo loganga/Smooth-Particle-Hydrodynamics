@@ -24,6 +24,7 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Particle.h" />
     <ClInclude Include="src\gl3w\gl3w.h" />
     <ClInclude Include="src\gl3w\glcorearb.h" />
     <ClInclude Include="src\glew\glew.h" />

@@ -36,6 +36,7 @@
     <ClInclude Include="src\Model.h" />
     <ClInclude Include="src\RenderEngine.h" />
     <ClInclude Include="src\TrackBall.h" />
+    <ClInclude Include="Particle.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="helpers">

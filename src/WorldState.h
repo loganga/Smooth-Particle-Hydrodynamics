@@ -45,7 +45,7 @@ public:
 		
 		running = true;
 		model = Model();
-		model.generatePoints(100);
+		model.generateParticles(50);
 		//
 		// TODO figure out how to get the cube to the origin
 		//
@@ -95,7 +95,7 @@ public:
 	{
 		float elapsed = t - this->currentTime;
 		this->updateFrameTime(elapsed);
-		model.updateParticles(elapsed);
+		model.updateParticles(elapsed, currentModelTransform);
 		spinCube();
 		updateModelTransform();
 		

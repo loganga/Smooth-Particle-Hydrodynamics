@@ -9,6 +9,7 @@ To run the code, download the repo and open the project in Visual Studio. Build 
 
 #The Method
 In a nutshell, our implementation is a relatively simple process that, for each time step, determines acceleration as a function of all interacting forces on a given particle. In this case, forces are affected by physical qualities at each particle such as the radius, viscosity, bulk modulus, and density. With the calculated acceleration, displacement is determined and uploaded to the GPU. For detailed information on the equations used in this project, refer to the "Smooth Particle Hydrodynamics" section of the following paper: http://matthias-mueller-fischer.ch/publications/sca03.pdf
+For a C example of these implemented algorithms that we used as reference, refer to the following paper: http://www.cs.cornell.edu/~bindel/class/cs5220-f11/code/sph.pdf
 
 #Performance
 Our method does not make use of trees or spatial partitioning as a means of acceleration.  It does, however, gain a slight performance boost by symetrically updating particles as it iterates through all particles' interactions on a given particle. As a result, 100 particles render around 45 fps, 150 around 14 fps, and 200 around 6 fps.
